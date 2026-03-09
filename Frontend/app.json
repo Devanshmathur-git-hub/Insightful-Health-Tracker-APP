@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Insightful Health Tracker",
+    "slug": "health-tracker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0e27"
+    },
+    "plugins": [
+      "expo-sensors",
+      [
+        "react-native-maps",
+        {
+          "maps_ios_version": "5.2.1"
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.healthtracker.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app tracks your location for activity monitoring.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location for GPS-based activity tracking.",
+        "HealthKitUsageDescription": "This app reads your fitness data from Apple Health to sync steps and workouts.",
+        "com.apple.developer.healthkit": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0e27",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.healthtracker.app",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.BODY_SENSORS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "googleMapsApiKey": "AIzaSyCpWvAsacLbMWMiwfAU5RbIVMUkKh-5KgI"
+    }
+  }
+}
