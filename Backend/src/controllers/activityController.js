@@ -40,3 +40,6 @@ exports.deleteActivity = asyncHandler(async (req, res, next) => {
     await activity.deleteOne();
     res.status(200).json({ success: true, message: 'Activity deleted' });
 });
+
+
+

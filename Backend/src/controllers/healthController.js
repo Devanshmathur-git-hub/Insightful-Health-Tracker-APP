@@ -57,3 +57,7 @@ exports.deleteRecord = asyncHandler(async (req, res, next) => {
     await record.deleteOne();
     res.status(200).json({ success: true, message: 'Record deleted' });
 });
+
+
+
+

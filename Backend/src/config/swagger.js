@@ -207,3 +207,8 @@ Get a token by **Registering** or **Logging in**.
 
 const swaggerSpec = swaggerJsdoc(options);
 module.exports = swaggerSpec;
+
+
+
+
+

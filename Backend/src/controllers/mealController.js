@@ -44,3 +44,9 @@ exports.deleteMeal = asyncHandler(async (req, res, next) => {
     await meal.deleteOne();
     res.status(200).json({ success: true, message: 'Meal deleted' });
 });
+
+
+
+
+
+
