@@ -26,3 +26,6 @@ const ActivitySchema = new mongoose.Schema(
 ActivitySchema.index({ user: 1, date: -1 });
 
 module.exports = mongoose.model('Activity', ActivitySchema);
+
+
+
